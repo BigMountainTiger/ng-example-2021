@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'ag-grid.scss';
+@import "~bootstrap/scss/bootstrap";
+@import "~ladda/dist/ladda.min.css";
+
+
+html {
+  font-size: 16px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+  };
+
+  @media screen and (max-width: 480px) {
+    font-size: 10px;
+  };
+}
+
+html, body {
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}

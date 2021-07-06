@@ -1,0 +1,17 @@
+<div class="app-form-validation-dynamic">
+  <div class="json">
+    {{group.value | json}}
+  </div>
+  <form [formGroup]="group">
+    <div formArrayName="aliases">
+      <h2>Aliases</h2>
+      <button (click)="addAlias()">+ Add another alias</button>
+      
+      <div *ngFor="let alias of aliases.controls; let i=index">
+        <label for="alias-{{ i }}">Alias:</label>
+        <input id="alias-{{ i }}" type="text" [formControlName]="i">
+        <button (click)="removeAlias(i)">-</button>
+      </div>
+    </div>
+  </form>
+</div>

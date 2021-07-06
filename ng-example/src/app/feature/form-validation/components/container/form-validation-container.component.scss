@@ -1,0 +1,34 @@
+$nav-height: 2rem;
+
+.app-form-validation-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .navigator {
+    flex: 0 0 $nav-height;
+    height: $nav-height;
+    background-color: #c1c1c1;
+    display: flex;
+    align-items: center;
+
+    a {
+      margin: 0 1rem 0 0.1rem
+    }
+
+    a.disabled {
+      color: gray;
+      cursor: default;
+      pointer-events: none;
+    }
+
+  };
+
+  .content {
+    flex: 1 1 auto;
+    height: calc(100% - #{$nav-height});
+    padding: 1rem;
+    overflow: auto;
+    background-color: skyblue;
+  };
+}

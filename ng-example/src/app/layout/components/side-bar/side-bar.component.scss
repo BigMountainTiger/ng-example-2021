@@ -1,0 +1,36 @@
+.sidenav {
+  position: relative;
+  height: 100%;
+  width: auto;
+  z-index: 1;
+  background-color: #d1d1d1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 1rem;
+
+  a {
+    padding: 3px 20px 3px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: skyblue;
+    display: block;
+    transition: 0.3s;
+  }
+
+  a.disabled {
+    color: gray;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  a:not(.disabled):hover {
+    color: blue;
+  }
+
+  .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    font-size: 1rem;
+  }
+}

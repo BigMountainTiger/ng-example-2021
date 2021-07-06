@@ -1,0 +1,36 @@
+<div class="ladda-example">
+  <ul>
+    <li>
+      <a target="ladda-document" href="https://www.npmjs.com/package/angular2-ladda">
+        https://www.npmjs.com/package/angular2-ladda
+      </a>
+    </li>
+    <li>
+      <a target="ladda-document" href="https://www.npmjs.com/package/ladda/v/1.0.2">
+        https://www.npmjs.com/package/ladda/v/1.0.2
+      </a>
+    </li>
+    <li>
+      <a target="ladda-document" href="https://lab.hakim.se/ladda/">
+        https://lab.hakim.se/ladda/
+      </a>
+    </li>
+  </ul>
+
+  <ul>
+    <li>Style is added to the "styles.scss"</li>
+    <li>Default configure in the "app.module.ts"</li>
+    <li>Each button can be configured individually.</li>
+  </ul>
+
+  <div class="buttons">
+    <button class="btn btn-primary"
+      data-style="expand-right"
+      [ladda]="isLadda"
+      (click)="ClickMe()">Button expand-right</button>
+
+    <button class="btn btn-primary"
+      [ladda]="isLadda"
+      (click)="ClickMe()">Default button</button>
+  </div>
+</div>

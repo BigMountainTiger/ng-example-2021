@@ -1,0 +1,7 @@
+<p><span style="font-size: 0.8rem;">{{ name.value || 'Please type in a name' }}</span></p>
+<div>
+  <label for="name">Name: </label>
+  <input id="name" type="text" [formControl]="name">
+  <button (click)="setName('A Name')">Set Name</button>
+  <button (click)="setName('')">Clear Name</button>
+</div>

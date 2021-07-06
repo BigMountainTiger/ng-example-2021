@@ -1,0 +1,70 @@
+1. bash convert picture
+convert original.png -resize 16x16 favicon.ico
+convert original.png -resize 50% favicon.ico
+
+2. Angular cli - create application
+https://angular.io/cli/new
+ng new ng-example --skip-tests --skip-install --skip-git --minimal
+
+3. Angular cli
+https://angular.io/cli/generate
+ng g c core/components/login/login -m app
+
+4. Lazy loading module routing
+https://angular.io/guide/lazy-loading-ngmodules
+ng g m feature/a-lazy-module --route a-lazy-module -m app
+
+5. Content projection
+https://angular.io/guide/content-projection
+ng-content
+
+6. Angular service
+https://angular.io/tutorial/toh-pt4
+ng g s services/global-service
+When you provide the service at the root level, Angular creates a single,
+shared instance of service and injects into any class that asks for it.
+Registering the provider in the @Injectable metadata also allows Angular to optimize an application by removing the service
+if it turns out not to be used after all.
+
+-- root service is shared by all lazy load modules
+
+7. Toaster
+https://www.itsolutionstuff.com/post/how-to-use-toaster-notification-in-angular-8example.html
+
+8. ag-grid
+https://www.ag-grid.com/javascript-grid/modules/
+https://www.ag-grid.com/angular-grid/getting-started/
+npm i ag-grid-angular
+npm i ag-grid-enterprise
+@import styles in the styles.scss
+@import "~ag-grid-community/dist/styles/ag-grid.css";
+@import "~ag-grid-community/dist/styles/ag-theme-alpine.css";
+import 'ag-grid-enterprise' in app.module.ts
+import { AgGridModule } from 'ag-grid-angular' in the module to use the <ag-grid-angular> component
+"allowedCommonJsDependencies": [
+  "ag-grid-enterprise"
+] in angular.json
+
+9. Angular reactive from
+https://angular.io/guide/reactive-forms
+Need to import into the module that use it -
+https://stackoverflow.com/questions/44701441/using-reactiveformsmodule-on-module-lazyloaded
+Validation -
+https://angular.io/guide/form-validation
+Dropdown -
+https://angular.io/api/forms/SelectControlValueAccessor
+
+10. Bootstrap
+https://ng-bootstrap.github.io/#/home
+https://ng-bootstrap.github.io/#/getting-started
+
+11. angular2-ladda
+https://www.npmjs.com/package/angular2-ladda
+https://www.npmjs.com/package/ladda/v/1.0.2
+https://lab.hakim.se/ladda/
+
+
+
+
+
+

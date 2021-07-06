@@ -1,0 +1,22 @@
+.app-form-validation-group {
+  display: inline-block;
+
+  div {
+    margin: 0.1rem 0 0 0;
+  }
+
+  .json {
+    white-space: pre;
+    background-color: white;
+    padding: 1rem;
+    margin: 0 0 1rem 0;
+  }
+
+  .button {
+    float: right;
+    
+    button {
+      margin: 0.5rem 0 0 0.1rem;
+    }
+  }
+}

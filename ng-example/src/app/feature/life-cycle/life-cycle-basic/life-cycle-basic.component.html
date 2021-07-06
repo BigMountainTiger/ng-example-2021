@@ -1,0 +1,22 @@
+<a href="https://angular.io/guide/lifecycle-hooks" target="lifecycle-hooks">
+  https://angular.io/guide/lifecycle-hooks
+</a>
+
+<ol>
+  <li class="once">constructor()</li>
+  <li>ngOnChanges() - Called before ngOnInit() (if the component has bound inputs) and whenever one or more data-bound input properties change.
+    Note that if your component has no inputs or you use it without providing any inputs, the framework will not call ngOnChanges()
+  </li>
+  <li class="once">ngOnInit() - Called once, after the first ngOnChanges(). ngOnInit() is still called even when ngOnChanges() is not fired</li>
+  <li class="ng-docheck">ngDoCheck() - Called immediately after ngOnChanges() on every change detection run, and immediately after ngOnInit() on the first run</li>
+  <li class="once">ngAfterContentInit() - Called once after the first ngDoCheck()</li>
+  <li>ngAfterContentChecked() - Called after ngAfterContentInit() and every subsequent ngDoCheck()</li>
+  <li class="once">ngAfterViewInit() - Called once after the first ngAfterContentChecked()</li>
+  <li>ngAfterViewChecked() - Called after the ngAfterViewInit() and every subsequent ngAfterContentChecked()</li>
+  <li class="once">ngOnDestroy() - Called immediately before Angular destroys the directive or component</li>
+</ol>
+
+<ul>
+  <li class="once">Bold entries are called only once</li>
+  <li class="ng-docheck">ngDoCheck() is a good indicator for change detection run</li>
+</ul>

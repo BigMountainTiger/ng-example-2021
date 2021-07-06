@@ -1,0 +1,11 @@
+<ag-grid-angular
+    #mygrid
+    style="height: 90%;"
+    class="ag-theme-alpine"
+    [rowData]="rowData"
+    [gridOptions]="gridOptions"
+    [columnDefs]="columnDefs"
+    (gridReady)="onGridReady($event)"
+    (gridSizeChanged)="gridSizeChanged($event)">
+</ag-grid-angular>
+<button (click)="Resize()" class="btn btn-primary">Resize</button>

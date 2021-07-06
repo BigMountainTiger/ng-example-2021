@@ -1,0 +1,21 @@
+.app-header {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .welcome {
+    font-size: 2rem;
+    color: white;
+    padding-left: 1rem;
+  };
+
+  .icon {
+    margin-right: 3rem;
+
+    img {
+      width: 3rem;
+      border-radius: 50%;
+    }
+  }
+}

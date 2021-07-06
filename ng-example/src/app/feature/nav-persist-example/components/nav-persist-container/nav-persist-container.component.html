@@ -1,0 +1,11 @@
+<div class="app-nav-persist-container">
+  <div class="navigator">
+   <button class="btn btn-primary" (click)="GotoA()">Go to A</button>
+   <button class="btn btn-primary" (click)="GotoAWithParams()">Go to A with parameter</button>
+   <button class="btn btn-primary" (click)="GotoB()">Go to B</button>
+   <button class="btn btn-primary" (click)="GotoBWithParams()">Go to B with parameter</button>
+  </div>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+$nav-height: 3rem;
+
+.app-nav-persist-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .navigator {
+    flex: 0 0 $nav-height;
+    height: $nav-height;
+    background-color: #c1c1c1;
+    display: flex;
+    align-items: center;
+
+    button {
+      margin: 0.2rem;
+    };
+  };
+
+  .content {
+    flex: 1 1 auto;
+    height: calc(100% - #{$nav-height});
+    padding: 1rem;
+    overflow: auto;
+  };
+}

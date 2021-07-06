@@ -1,0 +1,11 @@
+li {
+  margin: 0.4rem;
+
+  &.once {
+    font-weight: bold;
+  }
+
+  &.ng-docheck {
+    color: brown;
+  }
+}

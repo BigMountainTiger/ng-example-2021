@@ -1,0 +1,9 @@
+<div class="app-ng-content-example">
+  <p>Content projection vs. child route</p>
+  <ul>
+    <li>Content projection - The container is recreated every time the component is loaded</li>
+    <li>Child route - The container component is not recreated when navigating among the children</li>
+  </ul>
+  <ng-content select="[content-1]"></ng-content>
+  <ng-content select="[content-2]"></ng-content>
+</div>

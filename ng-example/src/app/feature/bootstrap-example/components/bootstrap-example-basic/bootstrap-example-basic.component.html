@@ -1,0 +1,35 @@
+<div>
+  <ul>
+    <li><a href="https://ng-bootstrap.github.io/#/home" target="btrap">https://ng-bootstrap.github.io/#/home</a></li>
+    <li><a href="https://ng-bootstrap.github.io/#/getting-started" target="btrap">https://ng-bootstrap.github.io/#/getting-started</a></li>
+  </ul>
+
+
+  <ul>
+    <li>Automatic installation may encounter problems</li>
+    <li>Manual installation may be a better option
+      <ol>
+        <li>Add bootstrap and @ng-bootstrap/ng-bootstrap dependencies from npm</li>
+        <li>Install the @angular/localize polyfill (It is a dependencie of @ng-bootstrap/ng-bootstrap) -
+          <a href="https://angular.io/guide/i18n#setting-up-localization-with-the-angular-cli" target="ng-localize">
+            https://angular.io/guide/i18n#setting-up-localization-with-the-angular-cli
+          </a>
+          <br>
+          "ng add @angular/localize" - It npm install the @angular/localize and add an entry to the polyfill.ts file.
+        </li>
+        <li>Add bootstrap CSS/SCSS to your project (no javascript is required)</li>
+        <li>Import NgbModule or any other component module like NgbPaginationModule in your application</li>
+      </ol>
+    </li>
+  </ul>
+
+  <div>
+    If we want to use only the css, we can just add the css "@import "~bootstrap/scss/bootstrap";" in the styles.scss file
+    <br>
+    <a class="btn btn-primary">This is a bootstrap button</a>
+  </div>
+  <br>
+  <div>
+    If we want to use bootstrap controls, we need to "npm i @ng-bootstrap/ng-bootstrap" and import the module
+  </div>
+</div>
